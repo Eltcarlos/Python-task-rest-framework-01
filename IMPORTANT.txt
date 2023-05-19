@@ -1,0 +1,48 @@
+# Creamos primero un entorno virtual
+
+1. pip install virtualenv
+2. python -m venv name_carpeta
+
+
+# F1 y seleccionamos la recomendada
+3. pip install django
+
+
+# EL punto es para que me cree los archivos fuera de la carpeta
+4. django-admin startproject name_project .
+
+
+# Correr el servidor
+5. python manage.py runserver
+
+
+# Correr la aplciacion
+6. python manage.py startapp tasks
+
+
+# Ejecutar modelos // Crea todas las tablas que necesite el projecto para funcionar
+7. python manage.py migrate
+
+
+# install djangorestframework
+8. pip install djangorestframework
+
+
+# Autorizar un servidor a conectarse al servidor
+9. pip install django-cors-headers
+
+
+# Crear la tabla despues de tener el modelo
+10. python manage.py makemigrations tasks
+
+
+# Ejecutar el modelo
+11. python manage.py migrate tasks
+
+
+# Create user
+12. python manage.py createsuperuser
+
+
+# Auto Documentar la api 
+13. pip install coreapi
